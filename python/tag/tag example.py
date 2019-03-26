@@ -7,7 +7,7 @@ from systemlink.tagclient import messages
 file = open("C:\\ProgramData\\National Instruments\\salt\\conf\\minion_id","r")
 minion_id = file.read()
 
-update = 5.14
+update = 3.14
 
 with TagClient(service_name='TagGenerator') as tag_client:
     tag_path = minion_id + ".foo" 
